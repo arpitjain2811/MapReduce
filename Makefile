@@ -11,4 +11,4 @@ t3:
 	hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming.jar -D mapreduce.job.reduces=1 -file TopKMap.py -mapper TopKMap.py -file TopKReduce.py -reducer TopKReduce.py -input Articles  -output TopK
 
 t4:
-	hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming.jar -D mapreduce.job.reduces=1 -file InvertedIndexMap.py -mapper InvertedIndexMap.py -file InvertedIndexreduce.py -reducer InvertedIndexreduce.py -input Articles  -output InvertedIndex
+	hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming.jar -D mapreduce.job.reduces=1 -file InvertedIdxMap.py -mapper InvertedIdxMap.py -file InvertedIdxReduce.py -reducer InvertedIdxReduce.py -input Articles  -output InvertedIndex
