@@ -1,3 +1,5 @@
+all: t1 t2 t3 t4
+
 t0:
 	hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming.jar -D mapreduce.job.reduces=1 -file map.py -mapper map.py -file reduce.py -reducer reduce.py -input Articles  -output WordCount
 

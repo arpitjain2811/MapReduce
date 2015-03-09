@@ -16,5 +16,8 @@ for line in sys.stdin:
         # output goes to STDOUT (stream data that the program writes)
         
 
-        if word not in stop and len(word)>0 and word[0].isalpha():
-        	print "%s\t%d" %( word[0].upper(), 1 )
+        if word not in stop and len(word)>0:
+        	if word[0].isalpha():
+        		print "%s\t%d" %( word[0].upper(), 1 )
+        	else:
+        		print "%s\t%d" %( word[0], 1 )	

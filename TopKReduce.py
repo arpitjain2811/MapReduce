@@ -14,7 +14,6 @@ for line in sys.stdin:
     else:
         if cur_key:
         	global_count[cur_key] = cur_count
-            #print '%s\t%s' % (cur_key, cur_count)
         cur_key = key
         cur_count = int(value)
 
